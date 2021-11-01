@@ -52,6 +52,7 @@ function setupObserver() {
 }
 
 window.addEventListener('load', (event) => {
+    console.log("************ Setting up event listener ************");
     if (!('IntersectionObserver' in window)) {
         console.error("IntersectionObserver feature unavailable in the browser. Not setting up tracking!");
         return;
